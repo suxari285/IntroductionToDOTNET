@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace SimpleTasks
 {
@@ -16,7 +17,7 @@ namespace SimpleTasks
 #if FACTORIAL
             Console.WriteLine("Введите число которое хотите возвести в факториал: ");
             int number = Convert.ToInt32(Console.ReadLine());
-            int Factorial = 1;
+            BigInteger Factorial = 1;
             for (int i = 1; i <= number; i++)
             {
                 Factorial *= i;
